@@ -1,0 +1,168 @@
+body {
+    background-image: url(Lol.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.profile {
+    display: block;
+    max-width: 400px;
+    margin: 50px auto;
+    background: rgba(102, 237, 255, 0.733);
+    padding: 20px;
+    box-shadow: 10px -10px 0px rgba(179, 216, 250, 0.521);
+    border-radius: 10px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    perspective: 1000px;
+}
+
+.profile-image-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    border: 5px solid #ffffff;
+    border-radius: 50px;
+    
+}
+.profile-image-front,
+.profile-image-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    backface-visibility: hidden;
+}
+
+.profile-image-front {
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.profile-image-back {
+    transform: rotateY(180deg);
+}
+
+.profile h1 {
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+
+.profile-details-container h3 {
+    width: 330px;
+    height: 40px;
+    background-color: #3498db;
+    font-size: 24px;
+    text-align: center;
+    transform: skewX(-20deg);
+    border: 3px solid #000000;
+    margin: 0px auto;
+    box-shadow: 10px -5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.profile-details-container p {
+    border-top: 2px dashed #000;
+    border-bottom: 2px dashed #000;;
+}
+
+.profile-details-container ul {
+    border-top: 2px dashed #000;
+    border-bottom: 2px dashed #000;;
+}
+
+.profile-details-container1 ul {
+    border-top: 2px dashed #000;
+    border-bottom: 2px dashed #000;;
+}
+
+.profile p {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    margin: 30px auto 30px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 10px -10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.social-links {
+    max-width: fit-content;
+    height: 40px;
+    margin: 0 auto 30px;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 35px;
+    box-shadow: 10px -5px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.social-links a {
+    color: #333;
+    margin: 6px 16px;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    display: fit-content;
+    transition: transform 0.4s;
+}
+
+.social-links a:hover {
+    transform: scale(2.0);
+}
+
+.profile-details {
+    display: inline-block;
+    text-align: none;
+    margin-top: 20px;
+}
+
+.profile-details.active {
+    display: block;
+}
+
+.profile-details-container,
+.profile-details-container1 {
+    font-size: 20px;
+}
+
+.profile-details-container1 h3 {
+    display: block;
+    width: 255px;
+    height: 40px;
+    background-color: #3498db;
+    font-size: 24px;
+    text-align: center;
+    transform: skewX(-20deg);
+    border: 3px solid #000;
+    margin: 0px auto;
+    box-shadow: 10px -5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.profile-details-container,
+.profile-details-container1 {
+    display: block;
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 20px; 
+    background-color: #ffffffe8;
+    border: 3px solid #030000;
+    border-radius: 10px;
+    box-shadow: 10px -5px 0px rgba(24, 14, 14, 0.438);
+}
+
+.profile-details-container.active {
+    display: block;
+}
